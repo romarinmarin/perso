@@ -1,0 +1,128 @@
+.projects {
+  @include clearfix();
+  &__inner {
+    &__title {
+    }
+
+    &__subtitle {
+    }
+    &__item {
+      position: relative;
+    }
+
+    &__img {
+      position: relative;
+      z-index: 0;
+
+      &:hover {
+        .projects__inner__overlay {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      padding: 3vw 4vw;
+      right: 0;
+      transition: opacity 0.35s;
+      background-color: rgba(238, 191, 12, 0.93);
+      color: #000;
+
+      h3 {
+        font-size: 5rem;
+
+        margin: 0;
+      }
+      &__desc {
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+      }
+
+      &__agence {
+        font-size: 1.3rem;
+
+        color: #666666;
+      }
+
+      &__btn {
+        border-radius: 0;
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+        transition: background-color 0.2s;
+      }
+    }
+  }
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+}
+
+@media screen and (min-width: 990px) {
+}
+
+@media screen and (max-width: 990px) {
+  .projects {
+    &__inner {
+      overflow: hidden;
+      width: 90%;
+      margin: 0 auto 15px;
+      &__overlay {
+        padding: 3vw 4vw;
+
+        h3 {
+          // font-size: 5rem;
+          font-size: 4.1vw;
+        }
+        &__desc {
+          font-size: 2vw;
+        }
+        &__agence {
+          // font-size: 1.3rem;
+          font-size: 1.8vw;
+        }
+
+        &__btn {
+          padding: 0 3vw;
+          font-size: 2vw;
+
+          line-height: 5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}
+
+@media print and (min-width: 5in) {
+}

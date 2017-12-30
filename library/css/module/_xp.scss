@@ -1,0 +1,116 @@
+.xp {
+  padding: 6rem 0;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  background-color: #f1f1f1;
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__text {
+      width: 85%;
+      p {
+        font-size: 1.4rem;
+        color: #494e4e;
+        text-align: justify;
+      }
+    }
+
+    &__btn {
+      border-radius: 0;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      transition: background-color 0.2s;
+    }
+
+    &__img {
+      img {
+      }
+    }
+  }
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+}
+
+@media screen and (min-width: 990px) {
+}
+
+@media screen and (max-width: 990px) {
+  .xp {
+    &__inner {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .xp {
+    &__inner {
+      .row {
+      }
+
+      &__text {
+        width: 100%;
+      }
+
+      &__img {
+        text-align: center;
+        margin-top: 4.5rem;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .xp {
+    &__inner {
+      .row {
+        position: relative;
+        overflow: hidden;
+      }
+
+      &__img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}
+
+@media print and (min-width: 5in) {
+}

@@ -1,0 +1,61 @@
+.tblock {
+  &__title {
+    font-size: 3.7rem;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin: 0 0 5.5rem;
+    color: #8b8a8a;
+    max-width: 600px;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+}
+
+@media screen and (min-width: 990px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 767px) {
+  .tblock {
+    &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}
+
+@media print and (min-width: 5in) {
+}

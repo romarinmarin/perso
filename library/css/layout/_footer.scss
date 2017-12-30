@@ -1,0 +1,118 @@
+.footer {
+  background-color: #f1f1f1;
+  @include clearfix();
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__title {
+  }
+  &__subtitle {
+  }
+
+  form {
+    width: 80%;
+    margin: 7.5rem auto 0;
+
+    label {
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 2rem;
+      margin-top: 1rem;
+      -webkit-appearance: none;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      color: #282c35;
+      border-radius: 0.4rem;
+      border: 0.4rem solid #fff;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    // textarea {
+    //   position: relative;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   padding: 2rem;
+    //   margin-top: 1rem;
+    //   -webkit-appearance: none;
+    //   display: block;
+    //   width: 100%;
+    //   background-color: #fff;
+    //   color: #282c35;
+    //   border-radius: 4px;
+    //   border: 4px solid #fff;
+    //   -webkit-transform: translateZ(0);
+    //   transform: translateZ(0);
+    //   -webkit-transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    //   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    //   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    // }
+  }
+}
+
+.wpcf7-response-output.wpcf7-validation-errors {
+  display: none;
+}
+
+.wpcf7-not-valid-tip {
+  color: rgb(255, 58, 58);
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+}
+
+@media screen and (min-width: 990px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 767px) {
+  .footer form {
+    width: 100%;
+    margin: 3.5rem auto 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}
+
+@media print and (min-width: 5in) {
+}

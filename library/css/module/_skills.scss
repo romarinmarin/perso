@@ -1,0 +1,83 @@
+.nskills {
+  @include clearfix();
+  margin-top: -20px;
+  margin-bottom: 0;
+  background-color: #f1f1f1;
+  &__inner {
+    width: 90%;
+    margin: 42px auto 55px;
+    overflow: hidden;
+    &__title {
+    }
+
+    &__subtitle {
+    }
+    &__item {
+      padding: 0 2px;
+      text-align: left;
+      &__content {
+        &__img {
+          width: 35px;
+
+          &--support {
+            width: 31px;
+          }
+        }
+        &__title {
+          font-size: 1.6rem;
+          line-height: 1.2;
+          font-family: "Raleway", serif, sans-serif;
+          color: #222;
+          font-weight: 500;
+          margin-top: 4px;
+        }
+
+        &__text {
+          // font-size: 1.5rem;
+          // line-height: 1.6;
+          font-weight: 300;
+          text-align: justify;
+          font-size: 1.4rem;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+}
+
+@media screen and (min-width: 990px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+}
+
+@media print and (min-width: 5in) {
+}

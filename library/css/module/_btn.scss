@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    padding: 0 40px;
+
+    font-size: 15px;
+    color:#000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+
+
+    border: 2px solid $color-blue;
+    cursor: pointer;
+
+
+    &:hover{
+
+    }
+}
+
+.btn-small{ line-height: 30px; }
